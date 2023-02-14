@@ -2,6 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'courses',
-  template: '<h2>Course</h2>',
+  template: '<h2>Courses</h2>',
 })
-export class CourseComponent {}
+export class CoursesComponent {}
