@@ -19,3 +19,8 @@
 - we dont tightly couple the http request on the component class, component class should include the presentation logic instead of presentaion logic
 - We should use dependency injection instead of create a new instance, as there is any chances on the instance constructor, we need to come back and change the instance one by one
 - and we register our dependency injection in app.module.ts
+
+5. servies shortcut
+
+- `ng g s {function name}`
+- Inside the boilerplate, we will see the Injectable decorator, we only need it when we have dependency on the constructor
