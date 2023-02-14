@@ -9,3 +9,7 @@
 - call `ng g c {function name}`
 - it will automatically create css, html, spec.ts, and ts for us
 - it also updated our app.module.ts
+
+3. templates
+
+- if we want to use the attribute in our DOM, we need to add an asterik\*
