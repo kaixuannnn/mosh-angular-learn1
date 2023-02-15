@@ -53,3 +53,7 @@
 10. Style Binding
 
 - `<button [style.backgroundColor]="isActuve ? 'blue': 'white'" >`
+
+11. Event Binding
+
+- <button (click)="onSave()">Save</button>

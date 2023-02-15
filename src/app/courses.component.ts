@@ -7,14 +7,16 @@ import { CoursesService } from './courses.service';
     <ul>
       <li *ngFor="let course of courses">{{ course }}</li>
     </ul>
-
-    <button
-      class="btn btn-primary"
-      [class.active]="isActive"
-      [style.backgroundColor]="isActive ? 'green' : 'white'"
-    >
-      Save
-    </button>`,
+    <div (click)="onDivSave()">
+      <button
+        class="btn btn-primary"
+        [class.active]="isActive"
+        (click)="onSave($event)"
+        [style.backgroundColor]="isActive ? 'green' : 'white'"
+      >
+        Save
+      </button>
+    </div> `,
 })
 export class CoursesComponent {
   title = 'List of courses';
@@ -26,5 +28,16 @@ export class CoursesComponent {
   constructor(service: CoursesService) {
     // let service = new CoursesService();
     this.courses = service.getCourses();
+  }
+
+  onDivSave() {
+    console.log('Div is Clicked!');
+  }
+
+  // method
+  onSave($event: MouseEvent) {
+    // Without Stop Propagation, event bubbling will happen, when you click on on save, onDivSave will execute also
+    // $event.stopPropagation();
+    console.log('Button was clicked!', $event);
   }
 }
