@@ -7,18 +7,14 @@ import { CoursesService } from './courses.service';
     <ul>
       <li *ngFor="let course of courses">{{ course }}</li>
     </ul>
-    <img [src]="title" />
-    <table>
-      <tr>
-        <td [attr.colspan]="colspan"></td>
-      </tr>
-    </table>
-    <button class="btn btn-primary">Save</button>`,
+
+    <button class="btn btn-primary" [class.active]="isActive">Save</button>`,
 })
 export class CoursesComponent {
   title = 'List of courses';
   courses = ['course1', 'course2', 'course3'];
   colspan = 2;
+  isActive = true;
 
   // dependency injection
   constructor(service: CoursesService) {

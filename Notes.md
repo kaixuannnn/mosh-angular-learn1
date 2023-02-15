@@ -44,3 +44,8 @@
 
 - instal bootsrap
 - `@import "~bootstrap"`
+
+9. Class binding
+
+- `<button [class.active]="isActive"></button>`
+- input type = boolean
