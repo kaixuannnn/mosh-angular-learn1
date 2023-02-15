@@ -3,20 +3,7 @@ import { CoursesService } from './courses.service';
 
 @Component({
   selector: 'courses',
-  template: `<h2>{{ title }}</h2>
-    <ul>
-      <li *ngFor="let course of courses">{{ course }}</li>
-    </ul>
-    <div (click)="onDivSave()">
-      <button
-        class="btn btn-primary"
-        [class.active]="isActive"
-        (click)="onSave($event)"
-        [style.backgroundColor]="isActive ? 'green' : 'white'"
-      >
-        Save
-      </button>
-    </div> `,
+  template: ` <input (keyup.enter)="onKeyUp()" /> `,
 })
 export class CoursesComponent {
   title = 'List of courses';
@@ -35,9 +22,15 @@ export class CoursesComponent {
   }
 
   // method
-  onSave($event: MouseEvent) {
+  onSave($event: Event) {
     // Without Stop Propagation, event bubbling will happen, when you click on on save, onDivSave will execute also
     // $event.stopPropagation();
     console.log('Button was clicked!', $event);
+  }
+
+  onKeyUp() {
+    // old type
+    // if ($event.keyCode === 13) console.log('Enter was pressed');
+    console.log('Enter was pressed!');
   }
 }
