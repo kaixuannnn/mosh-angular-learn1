@@ -57,3 +57,8 @@
 11. Event Binding
 
 - <button (click)="onSave()">Save</button>
+
+12. Two way Binding
+
+- remember to add FormsModule in order to use 2 ways binding
+- `[()]` syntax of 2 way binding

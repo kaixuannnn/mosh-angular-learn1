@@ -3,34 +3,14 @@ import { CoursesService } from './courses.service';
 
 @Component({
   selector: 'courses',
-  template: ` <input #email (keyup.enter)="onKeyUp(email.value)" ) /> `,
+  template: ` <input [(ngModel)]="email" (keyup.enter)="onKeyUp()" />`,
 })
 export class CoursesComponent {
-  title = 'List of courses';
-  courses = ['course1', 'course2', 'course3'];
-  colspan = 2;
-  isActive = true;
+  email = 'me@example.com';
 
-  // dependency injection
-  constructor(service: CoursesService) {
-    // let service = new CoursesService();
-    this.courses = service.getCourses();
-  }
-
-  onDivSave() {
-    console.log('Div is Clicked!');
-  }
-
-  // method
-  onSave($event: Event) {
-    // Without Stop Propagation, event bubbling will happen, when you click on on save, onDivSave will execute also
-    // $event.stopPropagation();
-    console.log('Button was clicked!', $event);
-  }
-
-  onKeyUp(email: string) {
+  onKeyUp() {
     // old type
     // if ($event.keyCode === 13) console.log('Enter was pressed');
-    console.log('Enter was pressed!', email);
+    console.log('Enter was pressed!', this.email);
   }
 }

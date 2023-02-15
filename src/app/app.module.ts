@@ -7,6 +7,7 @@ import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { EmailService } from './email.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { EmailService } from './email.service';
     CourseComponent,
     AuthorsComponent,
   ],
-  imports: [BrowserModule],
+  imports: [BrowserModule, FormsModule],
   providers: [CoursesService, EmailService],
   bootstrap: [AppComponent],
 })
