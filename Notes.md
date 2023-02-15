@@ -39,3 +39,8 @@
 
 - Attribute binding syntax is a bit different from the properties binding
 - `<td [attr.colspan]="colspan"></td>` add attt. in front the attribute
+
+8. Bootstrap styling
+
+- instal bootsrap
+- `@import "~bootstrap"`

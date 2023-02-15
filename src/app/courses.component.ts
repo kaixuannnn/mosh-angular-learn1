@@ -12,7 +12,8 @@ import { CoursesService } from './courses.service';
       <tr>
         <td [attr.colspan]="colspan"></td>
       </tr>
-    </table>`,
+    </table>
+    <button class="btn btn-primary">Save</button>`,
 })
 export class CoursesComponent {
   title = 'List of courses';
