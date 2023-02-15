@@ -24,3 +24,10 @@
 
 - `ng g s {function name}`
 - Inside the boilerplate, we will see the Injectable decorator, we only need it when we have dependency on the constructor
+
+6. Properties Binding Syntax
+
+- `<img [src]='title'/>` the src is bind to title element,
+- Normally we use string interpolation for the string inside an element <h2>{{title}}</h2>
+- One way communication from component to DOM
+- Anything that change in dom will not affected in component
