@@ -3,7 +3,7 @@ import { CoursesService } from './courses.service';
 
 @Component({
   selector: 'courses',
-  template: ` <input (keyup.enter)="onKeyUp()" /> `,
+  template: ` <input #email (keyup.enter)="onKeyUp(email.value)" ) /> `,
 })
 export class CoursesComponent {
   title = 'List of courses';
@@ -28,9 +28,9 @@ export class CoursesComponent {
     console.log('Button was clicked!', $event);
   }
 
-  onKeyUp() {
+  onKeyUp(email: string) {
     // old type
     // if ($event.keyCode === 13) console.log('Enter was pressed');
-    console.log('Enter was pressed!');
+    console.log('Enter was pressed!', email);
   }
 }
