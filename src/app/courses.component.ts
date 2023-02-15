@@ -8,7 +8,13 @@ import { CoursesService } from './courses.service';
       <li *ngFor="let course of courses">{{ course }}</li>
     </ul>
 
-    <button class="btn btn-primary" [class.active]="isActive">Save</button>`,
+    <button
+      class="btn btn-primary"
+      [class.active]="isActive"
+      [style.backgroundColor]="isActive ? 'green' : 'white'"
+    >
+      Save
+    </button>`,
 })
 export class CoursesComponent {
   title = 'List of courses';

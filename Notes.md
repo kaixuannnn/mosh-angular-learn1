@@ -49,3 +49,7 @@
 
 - `<button [class.active]="isActive"></button>`
 - input type = boolean
+
+10. Style Binding
+
+- `<button [style.backgroundColor]="isActuve ? 'blue': 'white'" >`
