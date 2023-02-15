@@ -31,3 +31,11 @@
 - Normally we use string interpolation for the string inside an element <h2>{{title}}</h2>
 - One way communication from component to DOM
 - Anything that change in dom will not affected in component
+
+** Remember when we using Properties Binding we are actually binding the properties of a DOM element, not the attribute of HTML element
+** But most of the time, DOM properties and HTML attribute has the one to one mapping, there is some exception
+
+7. Attribute Binding
+
+- Attribute binding syntax is a bit different from the properties binding
+- `<td [attr.colspan]="colspan"></td>` add attt. in front the attribute

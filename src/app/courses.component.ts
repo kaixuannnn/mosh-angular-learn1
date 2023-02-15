@@ -7,11 +7,17 @@ import { CoursesService } from './courses.service';
     <ul>
       <li *ngFor="let course of courses">{{ course }}</li>
     </ul>
-    <img [src]="title" />`,
+    <img [src]="title" />
+    <table>
+      <tr>
+        <td [attr.colspan]="colspan"></td>
+      </tr>
+    </table>`,
 })
 export class CoursesComponent {
   title = 'List of courses';
   courses = ['course1', 'course2', 'course3'];
+  colspan = 2;
 
   // dependency injection
   constructor(service: CoursesService) {
