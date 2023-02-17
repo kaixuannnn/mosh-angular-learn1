@@ -62,3 +62,7 @@
 
 - remember to add FormsModule in order to use 2 ways binding
 - `[()]` syntax of 2 way binding
+
+13. Custom Pipe
+
+- `interface PipeTransform{ transform(value:any, ...args, any[]):any}`

@@ -8,6 +8,7 @@ import { CoursesService } from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import { EmailService } from './email.service';
 import { FormsModule } from '@angular/forms';
+import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { FormsModule } from '@angular/forms';
     CoursesComponent,
     CourseComponent,
     AuthorsComponent,
+    SummaryPipe,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService, EmailService],
