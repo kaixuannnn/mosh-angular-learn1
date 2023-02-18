@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-favourite',
@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./favourite.component.css'],
 })
 export class FavouriteComponent {
-  favourite = false;
+  @Input() favourite = false;
 
   onClick() {
     this.favourite = !this.favourite;
