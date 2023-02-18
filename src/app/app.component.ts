@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -9,6 +9,10 @@ export class AppComponent {
   title = 'mosh-angular-learn1';
   post = {
     title: 'Title',
-    isFavourite: true,
+    isFavourite: false,
   };
+
+  onFavouriteChange() {
+    console.log('Favourite Change');
+  }
 }

@@ -1,5 +1,8 @@
 <h1>Angular</h1>
-<app-favourite [is-favourite]="post.isFavourite"></app-favourite>
+<app-favourite
+  [is-favourite]="post.isFavourite"
+  (change)="onFavouriteChange()"
+></app-favourite>
 <!-- <app-capitalize-pipe></app-capitalize-pipe> -->
 
 <!-- <courses></courses> -->
