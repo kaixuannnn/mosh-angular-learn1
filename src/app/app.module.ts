@@ -9,6 +9,8 @@ import { AuthorsComponent } from './authors/authors.component';
 import { EmailService } from './email.service';
 import { FormsModule } from '@angular/forms';
 import { FavouriteComponent } from './favourite/favourite.component';
+import { CapitalizePipeComponent } from './capitalize-pipe/capitalize-pipe.component';
+import { TitleCasePipe } from './title-case.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +19,8 @@ import { FavouriteComponent } from './favourite/favourite.component';
     CourseComponent,
     AuthorsComponent,
     FavouriteComponent,
+    CapitalizePipeComponent,
+    TitleCasePipe,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService, EmailService],
