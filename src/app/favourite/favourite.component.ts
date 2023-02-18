@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./favourite.component.css'],
 })
 export class FavouriteComponent {
-  @Input() favourite = false;
+  @Input('is-favourite') favourite = false;
 
   onClick() {
     this.favourite = !this.favourite;
