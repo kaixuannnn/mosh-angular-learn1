@@ -13,7 +13,14 @@
       type="text"
       class="form-control"
       (change)="log(firstName)"
+      required
     />
+    <div
+      class="alert alert-danger"
+      *ngIf="firstName.touched && !firstName.valid"
+    >
+      First name is required.
+    </div>
   </div>
   <div class="form-group">
     <label for="comment">Comment</label>
