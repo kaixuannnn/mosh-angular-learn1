@@ -1,2 +1,5 @@
-<div *ngIf="courses.length > 0">List of courses</div>
-<div *ngIf="courses.length === 0 || !courses">No courses yet</div>
+<!-- <div *ngIf="courses.length > 0; else noCourses">List of courses</div> -->
+<div *ngIf="courses.length > 0; then coursesList; else noCourses"></div>
+<ng-template #coursesList>List of Courses</ng-template>
+<ng-template #noCourses>No courses yet</ng-template>
+<!-- we use ng template, the logic above implies if there is no coursesm, ng-template will show-->
