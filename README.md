@@ -23,3 +23,8 @@
 5. \*ngSwitch
 
 - \*ngIf evaluate booolean, whereas ngswitch evaluate string
+
+6. \*ngFor
+
+- when we render a list of dom, a new list is rerender. Sometimes, the content of the list are the same, however angular will treat it as a new list
+- therefore, we can use TrackBy event from ngFor to track the object, code added show how we track the list by its id, and now the course id is track, list is no more render when we load the list
