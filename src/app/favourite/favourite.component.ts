@@ -10,6 +10,10 @@ export class FavouriteComponent {
   @Output() change = new EventEmitter();
   onClick() {
     this.favourite = !this.favourite;
-    this.change.emit();
+    this.change.emit({ isFavourite: this.favourite });
   }
+}
+
+export interface FavouriteChangedEvent {
+  isFavourite: boolean;
 }

@@ -1,7 +1,7 @@
 <h1>Angular</h1>
 <app-favourite
   [is-favourite]="post.isFavourite"
-  (change)="onFavouriteChange()"
+  (change)="onFavouriteChange($event)"
 ></app-favourite>
 <!-- <app-capitalize-pipe></app-capitalize-pipe> -->
 
