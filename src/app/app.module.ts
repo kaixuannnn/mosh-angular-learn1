@@ -12,6 +12,7 @@ import { FavouriteComponent } from './favourite/favourite.component';
 import { CapitalizePipeComponent } from './capitalize-pipe/capitalize-pipe.component';
 import { TitleCasePipe } from './title-case.pipe';
 import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
+import { LikeComponent } from './like/like.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.compo
     CapitalizePipeComponent,
     TitleCasePipe,
     BootstrapPanelComponent,
+    LikeComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService, EmailService],

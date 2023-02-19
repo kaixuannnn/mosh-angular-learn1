@@ -13,6 +13,15 @@ export class AppComponent {
     isFavourite: false,
   };
 
+  tweet = {
+    likesCount: 0,
+    isLiked: true,
+  };
+
+  onLikeChange(event: any) {
+    console.log('Like Change');
+  }
+
   onFavouriteChange(event: FavouriteChangedEvent) {
     console.log('Favourite Change', event);
   }

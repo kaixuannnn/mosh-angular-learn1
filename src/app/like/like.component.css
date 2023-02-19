@@ -1,0 +1,10 @@
+.heart {
+  height: 30px;
+  width: 30px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.liked {
+  background-color: deeppink;
+}
