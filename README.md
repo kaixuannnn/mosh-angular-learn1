@@ -38,3 +38,7 @@
 
 - code applied demonstrate on how to make a custom derivative
 - hostListener decorator used to subscribe to the event raised by the dom object
+
+9. Form
+
+- We need to initialize form-group and form-control by given a class name
