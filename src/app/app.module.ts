@@ -13,6 +13,7 @@ import { CapitalizePipeComponent } from './capitalize-pipe/capitalize-pipe.compo
 import { TitleCasePipe } from './title-case.pipe';
 import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
 import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { LikeComponent } from './like/like.component';
     TitleCasePipe,
     BootstrapPanelComponent,
     LikeComponent,
+    InputFormatDirective,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService, EmailService],

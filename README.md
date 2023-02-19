@@ -33,3 +33,8 @@
 
 - ngClass we use to render a class based on some expression
 - same as how it works as classbinding
+
+8. custom derivative
+
+- code applied demonstrate on how to make a custom derivative
+- hostListener decorator used to subscribe to the event raised by the dom object
