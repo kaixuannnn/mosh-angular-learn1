@@ -1,15 +1,1 @@
-<button (click)="onLoadCourse()">Add</button>
-<ul>
-  <!-- index is one of the exported value, -->
-  <li
-    *ngFor="
-      let course of courses;
-      index as i;
-      even as isEven;
-      trackBy: trackCourse
-    "
-  >
-    {{ i }} - {{ course.name }} <span *ngIf="isEven">(EVEN)</span>
-    <button (click)="onRemove(course)">Delete</button>
-  </li>
-</ul>
+<app-favourite></app-favourite>
