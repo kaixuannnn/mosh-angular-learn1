@@ -14,3 +14,8 @@
 
 - Structural - modify the structure of the DOM
 - Attribute - modify the attributes of DOM element
+
+4. \*ngIf, hidden
+
+- The difference between 2 of them is, when ngIf is evaluated as falsie, the element is removed from the dom
+- whereas when you use hidden attribute, the element is just display: hide
