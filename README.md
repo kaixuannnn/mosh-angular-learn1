@@ -9,3 +9,8 @@
 
 - If we want to create an reusable component, we can use ng content
 - If we want to render something without putting it inside a div or other kind of html elememt, we can use `ngcontainer` mark up
+
+3. Directives
+
+- Structural - modify the structure of the DOM
+- Attribute - modify the attributes of DOM element
