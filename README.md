@@ -42,3 +42,7 @@
 9. Form
 
 - We need to initialize form-group and form-control by given a class name
+
+10. Ng Model .ng-touched
+
+- As you can see while we applied ngModel to our form, we can access and utilise the .ng-touched .ng-pristine class
