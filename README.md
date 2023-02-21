@@ -46,3 +46,12 @@
 10. Ng Model .ng-touched
 
 - As you can see while we applied ngModel to our form, we can access and utilise the .ng-touched .ng-pristine class
+
+11. Ng Model radio button
+
+- remember ngModel need to associate with name
+
+12. Drop down list
+
+- for the value attribute we will get the string, in order to get the object value we can use `[ngValue]="method"`
+- we can add multiple inside select element
