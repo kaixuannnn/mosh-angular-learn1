@@ -55,3 +55,8 @@
 
 - for the value attribute we will get the string, in order to get the object value we can use `[ngValue]="method"`
 - we can add multiple inside select element
+
+13. Reactive Form
+
+- In template form, we use HTML Valiation, however in reactive form, we use validators
+- FormControl(formState: initialState, validator?: ValidatorFn, asyncValidator?: AsyncValidatorFn)
