@@ -24,6 +24,7 @@ import { UdemyCoursesComponent } from './udemy-courses/udemy-courses.component';
     AppComponent,
     CoursesComponent,
     CourseComponent,
+    ContactFormComponent,
     AuthorsComponent,
     SummaryPipe,
     FavouriteComponent,

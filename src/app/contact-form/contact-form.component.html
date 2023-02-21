@@ -23,7 +23,7 @@
     >
       <div *ngIf="firstName?.errors?.['required']">First name is required.</div>
       <div *ngIf="firstName?.errors?.['minlength']">
-        First name msut more than
+        First name must more than
         {{ firstName?.errors?.["minlength"]?.requiredLength }}
       </div>
     </div>
