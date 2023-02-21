@@ -1,0 +1,44 @@
+<form #f="ngForm" (ngSubmit)="submit(f)">
+  <div class="form-group">
+    <label for="firstName">First Name</label>
+    <!-- we set this template variable to ngModel directive that is applied to the input field.
+    -->
+    <!-- When we applited the ng model associated with the name, angular automatically creates an instance of the form conntrol class and associated with this input field-->
+    <!-- by console.log the ngModel form control classs we can see the properties of the input field like pristine, dirty, invalid valid and so on.-->
+    <input
+      ngModel
+      name="firstName"
+      #firstName="ngModel"
+      id="firstName"
+      type="text"
+      class="form-control"
+      (change)="log(firstName)"
+      required
+      minlength="3"
+      maxlength="10"
+    />
+    <div
+      class="alert alert-danger"
+      *ngIf="firstName.touched && !firstName.valid"
+    >
+      <div *ngIf="firstName?.errors?.['required']">First name is required.</div>
+      <div *ngIf="firstName?.errors?.['minlength']">
+        First name msut more than
+        {{ firstName?.errors?.["minlength"]?.requiredLength }}
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    <textarea
+      ngModel
+      name="comment"
+      #comment="ngModel"
+      id="comment"
+      cols="30"
+      rows="10"
+      class="form-control"
+    ></textarea>
+  </div>
+  <button class="btn btn-primary">Submit</button>
+</form>

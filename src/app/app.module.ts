@@ -9,6 +9,14 @@ import { AuthorsComponent } from './authors/authors.component';
 import { EmailService } from './email.service';
 import { FormsModule } from '@angular/forms';
 import { SummaryPipe } from './summary.pipe';
+import { FavouriteComponent } from './favourite/favourite.component';
+import { CapitalizePipeComponent } from './capitalize-pipe/capitalize-pipe.component';
+import { TitleCasePipe } from './title-case.pipe';
+import { BootstrapPanelComponent } from './bootstrap-panel/bootstrap-panel.component';
+import { LikeComponent } from './like/like.component';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +25,14 @@ import { SummaryPipe } from './summary.pipe';
     CourseComponent,
     AuthorsComponent,
     SummaryPipe,
+    FavouriteComponent,
+    CapitalizePipeComponent,
+    TitleCasePipe,
+    BootstrapPanelComponent,
+    LikeComponent,
+    InputFormatDirective,
+    ZippyComponent,
+    ContactFormComponent,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService, EmailService],
